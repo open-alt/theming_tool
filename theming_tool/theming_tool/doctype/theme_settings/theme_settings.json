@@ -1,0 +1,91 @@
+{
+ "creation": "2020-10-20 19:34:32.873115",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_5",
+  "logo",
+  "column_break_8",
+  "font",
+  "font_path",
+  "section_break_6",
+  "elements_colors",
+  "code_section",
+  "theme_scss"
+ ],
+ "fields": [
+  {
+   "fieldname": "elements_colors",
+   "fieldtype": "Table",
+   "label": "Elements Colors",
+   "options": "Element Color"
+  },
+  {
+   "fieldname": "theme_scss",
+   "fieldtype": "Code",
+   "label": "Theme",
+   "options": "SCSS"
+  },
+  {
+   "fieldname": "logo",
+   "fieldtype": "Attach Image",
+   "label": "Logo"
+  },
+  {
+   "fieldname": "font",
+   "fieldtype": "Link",
+   "label": "Font",
+   "options": "System Font"
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break",
+   "label": "Font & Logo"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break",
+   "label": "Elements Styles"
+  },
+  {
+   "fieldname": "code_section",
+   "fieldtype": "Section Break",
+   "label": "Code"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "font.font_file",
+   "fieldname": "font_path",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Font Path",
+   "read_only": 1
+  }
+ ],
+ "issingle": 1,
+ "modified": "2020-10-28 00:29:56.831235",
+ "modified_by": "Administrator",
+ "module": "Theming Tool",
+ "name": "Theme Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

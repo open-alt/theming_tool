@@ -1,0 +1,50 @@
+{
+ "autoname": "field:element",
+ "creation": "2020-10-20 19:32:50.687148",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "element",
+  "class",
+  "color"
+ ],
+ "fields": [
+  {
+   "fieldname": "element",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Element",
+   "options": "Element",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "color",
+   "fieldtype": "Color",
+   "in_list_view": 1,
+   "label": "Color",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "element.element_class",
+   "fieldname": "class",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Class",
+   "read_only": 1,
+   "reqd": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-10-26 15:29:26.905611",
+ "modified_by": "Administrator",
+ "module": "Theming Tool",
+ "name": "Element Color",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

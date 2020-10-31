@@ -1,0 +1,53 @@
+{
+ "autoname": "field:font_name",
+ "creation": "2020-10-24 11:11:29.869109",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "font_name",
+  "font_file"
+ ],
+ "fields": [
+  {
+   "fieldname": "font_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Font Name",
+   "reqd": 1,
+   "set_only_once": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "font_file",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "Font File",
+   "reqd": 1,
+   "set_only_once": 1
+  }
+ ],
+ "modified": "2020-10-25 11:53:00.657119",
+ "modified_by": "Administrator",
+ "module": "Theming Tool",
+ "name": "System Font",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
