@@ -16,7 +16,7 @@ Nav-bar class is ".navbar-default"
 3- Go to "Theme Settings" and select your font, logo, and in "ELEMENTS STYLES" table insert your element then chose a color
 NOTE: here I just add "background-color" attribute I'm willing to add more in the future.
 
-FOR IMAGES GO TO THIS [LINK](#https://discuss.erpnext.com/t/frappe-erpnext-theming-tool/67500)
+FOR IMAGES GO TO THIS [LINK](https://discuss.erpnext.com/t/frappe-erpnext-theming-tool/67500)
   
 #### License
 
