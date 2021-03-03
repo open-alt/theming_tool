@@ -6,8 +6,9 @@ def get_data():
 	return [
 		{
 			"module_name": "Theming Tool",
+			"category": "Modules",
 			"color": "grey",
-			"icon": "octicon octicon-file-directory",
+			"icon": "fa fa-wrench",
 			"type": "module",
 			"label": _("Theming Tool")
 		}
