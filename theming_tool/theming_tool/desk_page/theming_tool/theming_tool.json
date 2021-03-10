@@ -1,0 +1,35 @@
+{
+ "cards": [
+  {
+   "hidden": 0,
+   "label": "Elements & Fonts",
+   "links": "[\n    {\n        \"type\": \"doctype\",\n        \"name\": \"Element\",\n        \"label\": \"Elements\",\n        \"description\": \"Create an Element.\"\n    },\n    {\n        \"type\": \"doctype\",\n        \"name\": \"System Font\",\n        \"label\": \"System Fonts\",\n        \"description\": \"Create a font.\"\n    }\n]"
+  },
+  {
+   "hidden": 0,
+   "label": "Theme Settings",
+   "links": "[\n    {\n        \"type\": \"doctype\",\n        \"name\": \"Theme Settings\",\n        \"label\": \"Theme Settings\",\n        \"description\": \"Edit Theme settings\"\n    }\n]"
+  }
+ ],
+ "category": "Modules",
+ "charts": [],
+ "creation": "2021-03-03 23:11:59.307425",
+ "developer_mode_only": 0,
+ "disable_user_customization": 0,
+ "docstatus": 0,
+ "doctype": "Desk Page",
+ "extends_another_page": 0,
+ "hide_custom": 0,
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "label": "Theming Tool",
+ "modified": "2021-03-03 23:11:59.307425",
+ "modified_by": "Administrator",
+ "module": "Theming Tool",
+ "name": "Theming Tool",
+ "owner": "Administrator",
+ "pin_to_bottom": 0,
+ "pin_to_top": 0,
+ "shortcuts": []
+}
