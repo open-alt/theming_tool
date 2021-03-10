@@ -8,6 +8,7 @@ from frappe import _
 from frappe.model.document import Document
 import os
 from os.path import join as join_path, exists
+import cssutils
 
 class ThemeSettings(Document):
 	def validate(self):
@@ -34,9 +35,18 @@ class ThemeSettings(Document):
 		file_name = 'custom_theme.css'
 		output_path = join_path(dir, file_name)
 		content = self.theme_scss or ''
-		content = content.replace('\n', '\\n')
-		command = ['node', 'generate_bootstrap_theme.js', output_path, content]
-		process = Popen(command, cwd=frappe.get_app_path('frappe', '..'), stdout=PIPE, stderr=PIPE)
+		# content = content.replace('\n', '\\n')
+		# command = ['node', 'generate_bootstrap_theme.js', output_path, content]
+		# process = Popen(command, cwd=frappe.get_app_path('frappe', '..'), stdout=PIPE, stderr=PIPE)
+		
+		# Parse the stylesheet, replace color
+		parser = cssutils.parseString(content)
+
+		# Write to a new file
+		filename = os.path.join(dir, file_name)
+		with open(filename, 'wb') as f:
+			f.write(parser.cssText)
+
 		self.bench_build()
 		frappe.msgprint(_('Compiled Successfully'), alert=True)
 
