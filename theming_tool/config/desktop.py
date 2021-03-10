@@ -8,7 +8,7 @@ def get_data():
 			"module_name": "Theming Tool",
 			"category": "Modules",
 			"color": "grey",
-			"icon": "fa fa-wrench",
+			"icon": "octicon octicon-paintcan",
 			"type": "module",
 			"label": _("Theming Tool")
 		}
